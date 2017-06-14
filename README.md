@@ -1,7 +1,7 @@
 ## Lambda Microservices Creator - 0.0.1
 
 [![Latest Unstable Version](https://poser.pugx.org/leaphly/cart-bundle/v/unstable.svg)](//github.com/michaeldouglas/lambda-microservices-creator)
-[![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://github.com/michaeldouglas/lambda-microservices-creator)
+[![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://github.com/michaeldouglas/lambda-microservices-creator/blob/master/LICENSE)
 
 O Lambda Microservices Creator é reponsável por cuidar da estrutura de Microservices dos seus lambdas AWS e além disso é capaz de 
 reaalizar testes locais dos seu Lambdas e deploy do Lambda para a AWS.
