@@ -1,0 +1,64 @@
+<link href="/modules/jquery-easy-loading/dist/jquery.loading.css" rel="stylesheet">
+
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Criação do Lambda</h3>
+        </div>
+        <div class="panel-body">
+            <form method="POST" action="/criar-aws-lambda">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Nome da função <span style="color: red;">*</span></label>
+                        <input required value="lambda-" name="name" class="form-control">
+                        <p class="help-block">Para que exista um padrão de nomenclatura, por favor, mantenha o nome da sua função com a inicial: <strong>lambda-</strong> </p>
+                    </div>
+                    <div class="form-group">
+                        <label>Região: <span style="color: red;">*</span></label>
+                        <select class="form-control" name="region" id="region">
+                            <option value="us-east-2">US East (Ohio)</option>
+                            <option value="us-east-1" selected="selected">US East (N. Virginia)</option>
+                            <option value="us-west-1">US West (N. California)</option>
+                            <option value="us-west-2">US West (Oregon)</option>
+                            <option value="ap-northeast-2">Asia Pacific (Seoul)</option>
+                            <option value="ap-south-1">Asia Pacific (Mumbai)</option>
+                            <option value="ap-southeast-1">Asia Pacific (Singapore)</option>
+                            <option value="ap-southeast-2">Asia Pacific (Sydney)</option>
+                            <option value="ap-northeast-1">Asia Pacific (Tokyo)</option>
+                            <option value="eu-central-1">EU (Frankfurt)</option>
+                            <option value="eu-west-1">EU (Ireland)</option>
+                            <option value="eu-west-2">EU (London)</option>
+                        </select>
+                        <p class="help-block">Nossos serviços atualmente estão em: <strong>US East (N. Virginia)</strong>. A não ser que seja extremamente necessário trocar, por favor, mantenha o padrão.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Manipulador da função <span style="color: red;">*</span></label>
+                        <input required value="index.handler" name="handler" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Timeout da função <span style="color: red;">*</span></label>
+                        <input required value="60" name="timeout" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Regra <span style="color: red;">*</span></label>
+                        <input required value="arn:aws:iam::525203983100:role/lambdaPowerUser" name="role" class="form-control">
+                    </div>
+                    <button type="submit" id="criar" class="btn btn-primary"><i class="glyphicon glyphicon-cog"></i> CRIAR</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+<script src="/modules/jquery-easy-loading/dist/jquery.loading.js"></script>
+<script>
+$(function(){
+    $('#criar').click(function() {
+        $('body').loading({
+            message: 'Working on creation of AWS Lambda...',
+            stoppable: true
+        });
+    });
+});
+</script>

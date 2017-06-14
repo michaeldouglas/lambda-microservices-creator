@@ -21,3 +21,10 @@ yarn
 ```
 
 Esse comando instala as dependência do Lambda Microservices Creator.
+
+Agora você deve instalar os seguintes pacotes de forma global:
+
+```
+yarn global add lambda-local
+yarn global add gulp
+```

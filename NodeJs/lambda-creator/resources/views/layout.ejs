@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Atitude Microservices - <%= _locals.title %></title>
+    <meta name="description" content="Criador de lambda"/>
+    <meta name="author" content="Michael Douglas Barbosa Araujo"/>
+    <link rel="shortcut icon" href="https://d6iofrior8zek.cloudfront.net/img/atitude/favicon_atitude.ico" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+    <!-- Bootstrap -->
+    <link href="/modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="/assets/css/style.css" rel="stylesheet">
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <%- style %>
+</head>
+<body id="page" data-smooth-scroll="on">
+<!-- PAGE HEADER -->
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbarCollapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Atitude Microservices</a>
+            </div>
+            <div id="navbarCollapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Opções <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">AWS Lambda</li>
+                            <li><a href="/criar-lambda">Criar um novo Lambda</a></li>
+                            <li><a href="/lista-lambdas">Listar Lambdas criados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div id="app" class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Gerador AWS Lambda - Atitude</h1>
+                </div>
+                <%- body %>  
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <br />
+        <div class="col-md-12 text-center">
+            <p>Todos os direitos reservados a Atitude Midia Digital</p>
+        </div>
+    
+</footer>
+
+<!-- Scripts -->
+<script src="/modules/jquery/dist/jquery.min.js"></script>
+<script src="/modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<%- script %>
+</body>
+</html>

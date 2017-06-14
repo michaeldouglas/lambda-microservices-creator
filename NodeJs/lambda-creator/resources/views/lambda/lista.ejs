@@ -1,0 +1,74 @@
+<div class="col-lg-12 text-center">
+    <div class="row">
+        <table class="table table-bordered" id="table">
+            <thead>
+                <tr>
+                    <td> <strong>#</strong> </td>
+                    <td> <strong>Nome do lambda</strong> </td>
+                    <td> <strong>Data de criação</strong> </td>
+                    <td> <strong>Ações</strong> </td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- CONFIRM -->
+    <div class="modal fade" id="AWSRemoveLambdaModal" tabindex="-1" role="dialog" aria-labelledby="AWSRemoveLambdaModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="AWSRemoveLambdaModalLabel">Remoção do AWS Lambda</h4>
+          </div>
+          <div class="modal-body">
+            <strong>Atenção: </strong> Ao remover o Lambda só é possível recuperar se você tiver feito o envio para o CodeCommit da AWS. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            <button type="button" id="delete" class="btn btn-primary">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Run AWS Lambda -->
+    <div class="modal fade bs-example-modal-lg" id="AWSLambdaRunLocal" tabindex="-1" role="dialog" aria-labelledby="AWSLambdaRunLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="AWSLambdaRunLabel">Execução AWS Lambda</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Para rodar o teste local faça os seguintes passos:</p>
+                    <p>Entre na pasta: <strong>cd /development/projects/atitude/atitude-microservices/NodeJs/<span id="name_function"></span></strong></p>
+                    <p>E então execute: <strong>lambda-local -l index.js -h handler -e test/runLocal.js</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Deploy AWS Lambda -->
+    <div class="modal fade bs-example-modal-lg" id="AWSLambdaDeploy" tabindex="-1" role="dialog" aria-labelledby="AWSLambdaRunLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="AWSLambdaRunLabel">Execução AWS Lambda</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Para rodar o teste local faça os seguintes passos:</p>
+                    <p>Entre na pasta: <strong>cd /development/projects/atitude/atitude-microservices/NodeJs/<span id="name_function_deploy"></span></strong></p>
+                    <p>E então execute: <strong>gulp deploy</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/app.min.js"></script>
