@@ -3,8 +3,8 @@
 [![Latest Unstable Version](https://poser.pugx.org/leaphly/cart-bundle/v/unstable.svg)](//github.com/michaeldouglas/lambda-microservices-creator)
 [![License](https://poser.pugx.org/leaphly/cart-bundle/license.svg)](https://github.com/michaeldouglas/lambda-microservices-creator/blob/master/LICENSE)
 
-O Lambda Microservices Creator é reponsável por cuidar da estrutura de Microservices dos seus lambdas AWS e além disso é capaz de 
-reaalizar testes locais dos seu Lambdas e deploy do Lambda para a AWS.
+O Lambda Microservices Creator é reponsável por cuidar da estrutura de Microservices de seus AWS Lambdas  e além disso é capaz de 
+realizar testes locais e deploy para a AWS.
 
 ![Lambda Microservices Creator](https://s3-sa-east-1.amazonaws.com/lambda-microservices-creator/LogoTransparente.png)
 
@@ -23,7 +23,7 @@ Entre na pasta `Nodejs/lambda-creator` e então execute:
 yarn
 ```
 
-Esse comando instala as dependência do Lambda Microservices Creator.
+Esse comando instala as dependências do Lambda Microservices Creator.
 
 Agora você deve instalar os seguintes pacotes de forma global:
 
