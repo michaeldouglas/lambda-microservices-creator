@@ -1,9 +1,9 @@
 "use strict";
-let express = require('express');
-let http = require('http');
-let app = express();
-let expressLayouts = require('express-ejs-layouts');
-let bodyParser = require('body-parser');
+const express = require('express');
+const http = require('http');
+const app = express();
+const expressLayouts = require('express-ejs-layouts');
+const bodyParser = require('body-parser');
 
 // middlewares
 app.set('view engine', 'ejs');
@@ -20,7 +20,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Application Routes
-let routes = require('./routes');
+const routes = require('./routes');
+
 routes.set(app);
 
 const PORT = ( typeof process.env.PORT == 'undefined' ? '3000' : process.env.PORT );
