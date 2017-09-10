@@ -16,7 +16,12 @@ reaalizar testes locais dos seu Lambdas e deploy do Lambda para a AWS.
 Para utilizar o Lambda Creator você deve possuir a máquina responsável pela
 infraestrutura do projeto. Realize então o clone do Lambda Microservices Infraestrutura:
 
-[https://github.com/michaeldouglas/lambda-microservices-infrastructure](https://github.com/michaeldouglas/lambda-microservices-infrastructure)
+ - [https://github.com/michaeldouglas/lambda-microservices-infrastructure](https://github.com/michaeldouglas/lambda-microservices-infrastructure)
+
+E deve possuir o modelo de lambda:
+
+ - [https://github.com/michaeldouglas/lambda-microservices-skeleton](https://github.com/michaeldouglas/lambda-microservices-skeleton)
+
 
 ## Compatibilidade
 
