@@ -5,12 +5,12 @@ red=`tput setaf 1`
 green=`tput setaf 2`
 
 function installMachine(){
-    docker-machine create -d virtualbox --virtualbox-memory "2048" atitude-microservices
+    docker-machine create -d virtualbox --virtualbox-memory "2048" developer-microservices
 }
 
 function envMachine(){
-    docker-machine env atitude-microservices
-    eval $(docker-machine env atitude-microservices)
+    docker-machine env developer-microservices
+    eval $(docker-machine env developer-microservices)
 }
 
 function upJenkins(){

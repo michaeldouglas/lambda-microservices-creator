@@ -11,7 +11,7 @@ var Service = function(req, res) {
         }
     }).then(function(rowDeleted){
         if(rowDeleted === 1){
-            execute.rm('-rf', `/development/projects/atitude/atitude-microservices/NodeJs/${name}`);
+            execute.rm('-rf', `/development/projects/developer/developer-microservices/NodeJs/${name}`);
             
             res.json({status: 1, message: id});
         }
