@@ -1,4 +1,4 @@
-var Service = function(req, res) {
+const Service = (req, res) => {
     res.locals = {
         title: 'Lista de Lambdas'
     };
