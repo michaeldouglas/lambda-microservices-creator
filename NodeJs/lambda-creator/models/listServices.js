@@ -1,4 +1,4 @@
-let sequelize = require('../library/Database/Database');
+const sequelize = require('../library/Database/Database');
 
 
 const Services = sequelize.define('services', {
