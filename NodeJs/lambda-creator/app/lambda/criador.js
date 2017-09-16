@@ -1,6 +1,6 @@
-let Creator = require('../../library/Creator/Creator');
+const Creator = require('../../library/Creator/Creator');
 
-var Service = function(req, res) {
+const Service = (req, res) => {
     res.locals = {
         error: 'você tentou criar um lambda que já existe. Por favor, altere o nome e rode o criador novamente.',
         success: 'O seu Lambda foi criado com sucesso. Para verificar a estrutura, por favor, navegue até o caminho: '
